@@ -3,10 +3,12 @@
 ## 🇩🇪 Deutsch
 
 ### Idee
+
 Mealie kann Rezepte aus **URLs** und **Bildern** anlegen,  
 führt aber **keine Texterkennung (OCR)** auf Fotos durch.
 
 Viele Rezepte liegen jedoch als **Fotos** vor:
+
 - Kochbücher
 - Rezeptzeitschriften
 - handschriftliche Notizen
@@ -18,6 +20,7 @@ und **über die Mealie API** importieren kann.
 ---
 
 ### Ziel
+
 Ein externes Tool (kein Mealie-Core-Code), das:
 
 1. ein **Foto** entgegennimmt
@@ -29,6 +32,7 @@ Ein externes Tool (kein Mealie-Core-Code), das:
 ---
 
 ### Nicht-Ziele
+
 - ❌ Kein Ersatz für Mealie
 - ❌ Keine Änderungen am Mealie-Core
 - ❌ Kein perfektes OCR-Ergebnis
@@ -37,6 +41,7 @@ Ein externes Tool (kein Mealie-Core-Code), das:
 ---
 
 ### Motivation
+
 - Erweiterung der bestehenden Mealie-Funktionalität
 - Klare Trennung zwischen Core und externem Tool
 - Transparente, nachvollziehbare Implementierung
@@ -45,10 +50,12 @@ Ein externes Tool (kein Mealie-Core-Code), das:
 ---
 
 ### Projektstatus
+
 🟡 **Konzeptphase**
 
 Noch keine Implementierung.  
 Das Repository dient zunächst der:
+
 - Dokumentation
 - Strukturierung
 - Planung
@@ -58,26 +65,31 @@ Das Repository dient zunächst der:
 ### Geplante Phasen (Roadmap – grob)
 
 **Phase 0 – Konzept**
+
 - Zieldefinition
 - Abgrenzung
 - API-Analyse
 
 **Phase 1 – Lokales Tool**
+
 - Dateiauswahl (Windows)
 - Bild laden
 - OCR-Rohtext anzeigen
 
 **Phase 2 – Strukturierung**
+
 - Zutaten erkennen
 - Anleitung erkennen
 - Titel extrahieren
 
 **Phase 3 – Mealie-Integration**
+
 - API-Token
 - Rezept anlegen
 - Bild hochladen
 
 **Phase 4 – Qualität**
+
 - Logging
 - Fehlerfälle dokumentieren
 - Beispielbilder
@@ -85,6 +97,7 @@ Das Repository dient zunächst der:
 ---
 
 ### Lizenz
+
 MIT (vorgesehen)
 
 ---
@@ -92,10 +105,12 @@ MIT (vorgesehen)
 ## 🇬🇧 English
 
 ### Idea
+
 Mealie supports creating recipes from **URLs** and **images**,  
 but it **does not perform OCR** on photos.
 
 Many recipes exist only as images:
+
 - cookbooks
 - magazines
 - handwritten notes
@@ -107,6 +122,7 @@ and **import them via the Mealie API**.
 ---
 
 ### Goal
+
 An external tool (not part of Mealie core) that:
 
 1. accepts a **photo**
@@ -118,6 +134,7 @@ An external tool (not part of Mealie core) that:
 ---
 
 ### Non-Goals
+
 - ❌ Not a replacement for Mealie
 - ❌ No Mealie core modifications
 - ❌ No perfect OCR guarantee
@@ -126,6 +143,7 @@ An external tool (not part of Mealie core) that:
 ---
 
 ### Motivation
+
 - Extend Mealie without touching core code
 - Keep implementation transparent and understandable
 - Provide a foundation others can build upon
@@ -133,10 +151,12 @@ An external tool (not part of Mealie core) that:
 ---
 
 ### Project Status
+
 🟡 **Concept phase**
 
 No implementation yet.  
 This repository currently focuses on:
+
 - documentation
 - structure
 - planning
@@ -146,25 +166,30 @@ This repository currently focuses on:
 ### Planned Phases (High-Level Roadmap)
 
 **Phase 0 – Concept**
+
 - scope definition
 - API analysis
 
 **Phase 1 – Local Tool**
+
 - file picker (Windows)
 - image loading
 - raw OCR output
 
 **Phase 2 – Structuring**
+
 - ingredient detection
 - instruction parsing
 - title extraction
 
 **Phase 3 – Mealie Integration**
+
 - API token handling
 - recipe creation
 - image upload
 
 **Phase 4 – Quality**
+
 - logging
 - error documentation
 - example images
@@ -172,4 +197,53 @@ This repository currently focuses on:
 ---
 
 ### License
+
 MIT (planned)
+
+## Projektstruktur | Project Structure
+
+### Deutsch
+
+**Ordnerstruktur:**
+docs/
+├─ api/
+├─ imports/
+├─ legal/
+├─ flows/
+
+**Bedeutung:**
+
+- `docs/api/` – API-Dokumentation (Endpoints)
+- `docs/imports/` – Importer-Konzepte & Notizen
+- `docs/legal/` – Rechtliche Hinweise
+- `docs/flows/` – Datenfluss & Architektur light
+
+**Dateinamen:**
+
+- `mealie_endpoints.md`
+- `data_flow.md`
+- `legal_notes.md`
+
+---
+
+### English
+
+**Directory structure:**
+docs/
+├─ api/
+├─ imports/
+├─ legal/
+├─ flows/
+
+**Meaning:**
+
+- `docs/api/` – API documentation (endpoints)
+- `docs/imports/` – Importer concepts & notes
+- `docs/legal/` – Legal notes
+- `docs/flows/` – Data flow & lightweight architecture
+
+**File names:**
+
+- `mealie_endpoints.md`
+- `data_flow.md`
+- `legal_notes.md`
