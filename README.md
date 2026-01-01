@@ -205,11 +205,12 @@ MIT (planned)
 ### Deutsch
 
 **Ordnerstruktur:**
-docs/
-├─ api/
-├─ imports/
-├─ legal/
-├─ flows/
+
+- docs/
+- ├─ api/
+- ├─ imports/
+- ├─ legal/
+- ├─ flows/
 
 **Bedeutung:**
 
@@ -229,11 +230,12 @@ docs/
 ### English
 
 **Directory structure:**
-docs/
-├─ api/
-├─ imports/
-├─ legal/
-├─ flows/
+
+- docs/
+- ├─ api/
+- ├─ imports/
+- ├─ legal/
+- ├─ flows/
 
 **Meaning:**
 
@@ -247,3 +249,33 @@ docs/
 - `mealie_endpoints.md`
 - `data_flow.md`
 - `legal_notes.md`
+
+## 1.1 Zielplattform | Target Platform
+
+### Deutsch
+
+**Entscheidung:**  
+Das Tool wird **zuerst lokal auf Windows** entwickelt und betrieben.
+
+**Begründung:**  
+
+- Hauptarbeitsumgebung ist Windows  
+- Einfacher Zugriff auf lokale Dateien (Bilder, PDFs)  
+- Keine Abhängigkeit von Servern oder Cloud-Diensten in Phase 1
+
+Diese Entscheidung ist **verbindlich für Phase 1**.
+
+---
+
+### English
+
+**Decision:**  
+The tool will be developed and run **locally on Windows first**.
+
+**Rationale:**  
+
+- Primary development environment is Windows  
+- Easy access to local files (images, PDFs)  
+- No dependency on servers or cloud services in Phase 1
+
+This decision is **binding for Phase 1**.
